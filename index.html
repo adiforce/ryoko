@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大人關西行軍表 - V3.7 交通防禦版</title>
+    <title>大人關西行軍表 - V3.8 總管死諫版</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
@@ -23,23 +23,23 @@
 
     <!-- 頁首 -->
     <header class="bg-slate-900 text-white p-8 text-center shadow-2xl relative overflow-hidden">
-        <h1 class="text-3xl font-black tracking-tighter mb-2 italic">大人關西御賜行程 V3.7</h1>
-        <p class="text-sm font-medium tracking-widest text-slate-400">⚖️ 總管府特編 · 交通領票強化版 ⚖️</p>
+        <h1 class="text-3xl font-black tracking-tighter mb-2 italic">大人關西御賜行程 V3.8</h1>
+        <p class="text-sm font-medium tracking-widest text-slate-400">⚖️ 總管府特編 · 交通防禦與領票強化版 ⚖️</p>
     </header>
 
     <!-- 導航 -->
     <nav class="sticky top-0 bg-white/90 backdrop-blur-md shadow-lg flex overflow-x-auto z-50 no-scrollbar">
-        <button onclick="showTab('d1')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-slate-900 text-slate-900">🛬 D1 抵達</button>
+        <button onclick="showTab('d1')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🛬 D1 抵達</button>
         <button onclick="showTab('d2')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🛍️ D2 大阪</button>
         <button onclick="showTab('d3')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🌊 D3 海之京都</button>
-        <button onclick="showTab('d4')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">⛩️ D4 京都</button>
+        <button onclick="showTab('d4')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-slate-900 text-slate-900">⛩️ D4 京都</button>
         <button onclick="showTab('d5')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🧳 D5 京都</button>
     </nav>
 
     <main class="max-w-2xl mx-auto p-4 space-y-6">
 
         <!-- DAY 1: 05/01 (五) -->
-        <section id="d1" class="tab-content active space-y-4">
+        <section id="d1" class="tab-content space-y-4">
             <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/01 <span class="text-sm font-normal ml-3 text-slate-500">抵達大阪</span></h2>
             <div class="warning-box">
                 <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
@@ -97,11 +97,11 @@
         </section>
 
         <!-- DAY 4: 05/04 (一) -->
-        <section id="d4" class="tab-content space-y-4">
+        <section id="d4" class="tab-content active space-y-4">
             <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/04 <span class="text-sm font-normal ml-3 text-slate-500">京都：文化行腳</span></h2>
             <div class="warning-box">
-                <p class="text-sm text-red-700 font-bold">📢 總管死諫（重要！）：</p>
-                <p class="text-xs text-red-600 mt-1">大人今日抵達京都後，請務必先去<strong>京都車站</strong>領取明日的 Haruka 票券！機器領票在黃金週也要排隊，今日不領，明日恐生變數。</p>
+                <p class="text-sm text-red-700 font-bold">📢 總管死諫（今日重點）：</p>
+                <p class="text-xs text-red-600 mt-1">大人，雖然 D5 才要搭車，但 5/5 車站領票機器會大排長龍。老奴誠請大人今日抵京寄完行李後，<strong>順路去京都車站領票</strong>，避開明日的人禍。</p>
             </div>
             <div class="time-node">
                 <p class="font-bold text-lg text-blue-600">🚆 09:30 移動至京都</p>
@@ -109,7 +109,7 @@
             </div>
             <div class="time-node">
                 <p class="font-bold text-lg text-red-600">🎫 10:45 京都車站：提前領取 Haruka 票券</p>
-                <p class="text-sm text-gray-500">從烏丸搭地鐵兩站即達京都車站。前往「綠色售票機」領票。領完後再行午膳。</p>
+                <p class="text-sm text-gray-500">從烏丸搭地鐵兩站即達京都車站。前往「綠色售票機」領票。領完後即完成交通佈陣。</p>
             </div>
             <div class="card meal-box">
                 <h4 class="font-bold text-orange-800">🍜 午餐：麵處 虵之目屋</h4>
@@ -136,7 +136,7 @@
             <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/05 <span class="text-sm font-normal ml-3 text-slate-500">京都：最終採購</span></h2>
             <div class="warning-box">
                 <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
-                <p class="text-xs text-red-600 mt-1">今日為收假巔峰。大人手中已有票券，只需在 17:30 前抵達月台。機場退稅與安檢人龍預計極長。</p>
+                <p class="text-xs text-red-600 mt-1">今日收假。大人手中已有票券，只需 17:30 準時進站。機場人潮極長，莫在採購時失了分寸。</p>
             </div>
             <div class="time-node">
                 <p class="font-bold text-lg text-red-600">🍳 08:30 早餐：eggslut (京都旗艦店)</p>
@@ -159,7 +159,7 @@
             </div>
             <div class="time-node">
                 <p class="font-bold text-lg text-red-600">🚆 18:00 搭乘 Haruka 往機場</p>
-                <p class="text-sm">⚠️ 持 D4 領好之票券。23:35 飛機。</p>
+                <p class="text-sm">⚠️ 使用 D4 領妥之票券。23:35 飛機。</p>
             </div>
         </section>
 
