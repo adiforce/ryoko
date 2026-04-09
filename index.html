@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大人關西行軍表 - V3.0 終極版</title>
+    <title>大人關西行軍表 - V3.1 旗艦校閱版</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
@@ -25,13 +25,13 @@
         <div class="absolute inset-0 opacity-10 pointer-events-none flex justify-center items-center">
             <span class="text-[150px]">🏯</span>
         </div>
-        <h1 class="text-3xl font-black tracking-tighter mb-2 italic">大人關西御賜行程 V3.0</h1>
-        <p class="text-sm font-medium tracking-widest text-slate-400">⚖️ 總管府特編 · 每日提醒復刻版 ⚖️</p>
+        <h1 class="text-3xl font-black tracking-tighter mb-2 italic">大人關西御賜行程 V3.1</h1>
+        <p class="text-sm font-medium tracking-widest text-slate-400">⚖️ 總管府特編 · 晚餐名單增補版 ⚖️</p>
     </header>
 
     <nav class="sticky top-0 bg-white/90 backdrop-blur-md shadow-lg flex overflow-x-auto z-50 no-scrollbar">
-        <button onclick="showTab('d1')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-slate-900 text-slate-900">🛬 D1 抵達</button>
-        <button onclick="showTab('d2')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🛍️ D2 大阪</button>
+        <button onclick="showTab('d1')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🛬 D1 抵達</button>
+        <button onclick="showTab('d2')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-slate-900 text-slate-900">🛍️ D2 大阪</button>
         <button onclick="showTab('d3')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🌊 D3 海之京都</button>
         <button onclick="showTab('d4')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">⛩️ D4 京都</button>
         <button onclick="showTab('d5')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🧳 D5 京都</button>
@@ -39,8 +39,8 @@
 
     <main class="max-w-2xl mx-auto p-4 space-y-6">
 
-        <!-- DAY 1 -->
-        <section id="d1" class="tab-content active space-y-4">
+        <!-- DAY 1: 05/01 (五) -->
+        <section id="d1" class="tab-content space-y-4">
             <h2 class="text-2xl font-black text-slate-800">📅 05/01 抵達大阪</h2>
             <div class="warning-box">
                 <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
@@ -61,37 +61,55 @@
             </div>
         </section>
 
-        <!-- DAY 2 -->
-        <section id="d2" class="tab-content space-y-4">
-            <h2 class="text-2xl font-black text-slate-800">📅 05/02 大阪購物戰</h2>
+        <!-- DAY 2: 05/02 (六) -->
+        <section id="d2" class="tab-content active space-y-4">
+            <h2 class="text-2xl font-black text-slate-800">📅 05/02 大阪購物與宅店</h2>
             <div class="warning-box">
                 <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
-                <p class="text-xs text-red-600 mt-1">今日為黃金週週六，心齋橋人潮將如潮水。夾娃娃戰利品體積大，建議先放百貨置物櫃，或中途回飯店卸貨。</p>
+                <p class="text-xs text-red-600 mt-1">5/2 是黃金週週六，道頓堀人潮會讓大人舉步維艱。晚餐若選「美津の」，請務必在 17:00 前提早去排隊，否則等到飢腸轆轆恐失了大人體面。</p>
             </div>
             <div class="time-node">
                 <p class="font-bold text-lg text-red-600">🍳 09:00 早餐：eggslut</p>
                 <p class="text-sm text-gray-500">📍 心齋橋店。大人指定滑蛋漢堡。</p>
             </div>
             <div class="time-node">
-                <p class="font-bold text-lg">🛍️ 10:30 逛街活動 (心齋橋/美國村)</p>
+                <p class="font-bold text-lg">🛍️ 10:30 心齋橋/美國村 逛街</p>
             </div>
             <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🍱 午餐建議：</h4>
-                <p class="text-sm mt-1">牛かつ もと村、北極星蛋包飯、牛たん 吉次。</p>
+                <h4 class="font-bold text-orange-800">🍱 午餐熟食建議：</h4>
+                <p class="text-sm mt-1">1. 🥘 福太郎 (大阪燒)、2. 🍛 天地人 (燒肉丼)、3. 🍱 名代宇奈とと (鰻魚飯)。</p>
             </div>
             <div class="time-node">
-                <p class="font-bold text-lg">🎮 14:00 夾娃娃 (Taito 難波)</p>
+                <p class="font-bold text-lg">🧸 14:00 日本橋電器街 (宅店攻略)</p>
+                <p class="text-sm text-gray-500">📍 宅店分佈：Animate、駿河屋、Lashinbang。</p>
             </div>
             <div class="card tea-box">
                 <h4 class="font-bold text-green-800">☕ 下午茶：</h4>
                 <p class="text-sm mt-1">Mel Coffee Roasters 或 Elk Pancake。</p>
             </div>
             <div class="time-node">
-                <p class="font-bold text-lg">🛍️ 18:00 難波/日本橋 逛街</p>
+                <p class="font-bold text-lg text-slate-700">🛒 18:00 難波/日本橋 巡禮</p>
+            </div>
+            <div class="card meal-box">
+                <h4 class="font-bold text-orange-800">🥩 晚餐熱食建議：</h4>
+                <div class="space-y-3 mt-2 text-sm">
+                    <div class="border-b border-orange-100 pb-2">
+                        <p class="font-bold underline">1. 美津の (Mizuno) 大阪燒</p>
+                        <p class="text-xs text-gray-600">📍 大人指定。必點「山芋燒」，完全不加粉，口感極嫩。缺點：黃金週排隊時間恐超乎想像。</p>
+                    </div>
+                    <div class="border-b border-orange-100 pb-2">
+                        <p class="font-bold">2. 天ぷら まきの (Makino) 天婦羅</p>
+                        <p class="text-xs text-gray-600">📍 難波千日前。師傅現炸全熟熱騰騰，出貨極快， CP 值極高，是「美津の」排不下去時的最佳替身。</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">3. 千房 (Chibo) 大阪燒 難波店</p>
+                        <p class="text-xs text-gray-600">📍 難波名店。座位數較多，適合大人追求環境舒適與效率的考量。</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- DAY 3 -->
+        <!-- DAY 3: 05/03 (日) -->
         <section id="d3" class="tab-content space-y-4">
             <h2 class="text-2xl font-black text-slate-800">📅 05/03 海之京都</h2>
             <div class="warning-box">
@@ -113,7 +131,7 @@
             </div>
         </section>
 
-        <!-- DAY 4 -->
+        <!-- DAY 4: 05/04 (一) -->
         <section id="d4" class="tab-content space-y-4">
             <h2 class="text-2xl font-black text-slate-800">📅 05/04 京都</h2>
             <div class="warning-box">
@@ -144,7 +162,7 @@
             </div>
         </section>
 
-        <!-- DAY 5 -->
+        <!-- DAY 5: 05/05 (二) -->
         <section id="d5" class="tab-content space-y-4">
             <h2 class="text-2xl font-black text-slate-800">📅 05/05 京都</h2>
             <div class="warning-box">
