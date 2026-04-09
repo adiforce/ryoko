@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大人關西行軍表 - 2026黃金週版</title>
+    <title>大人關西行軍表 - V3.0 終極版</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
@@ -15,217 +15,171 @@
         .card { background: white; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); padding: 1.25rem; border: 1px solid #e2e8f0; }
         .meal-box { background-color: #fff7ed; border-left: 5px solid #f97316; }
         .tea-box { background-color: #f0fdf4; border-left: 5px solid #22c55e; }
-        .shop-box { background-color: #eff6ff; border-left: 5px solid #3b82f6; }
-        .warning-box { border: 2px dashed #ef4444; background: #fef2f2; }
+        .warning-box { border: 2px dashed #ef4444; background: #fef2f2; padding: 1rem; border-radius: 0.75rem; margin-bottom: 1.5rem; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
 <body class="pb-24">
 
-    <!-- 皇室奢華頁首 -->
     <header class="bg-slate-900 text-white p-8 text-center shadow-2xl relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 pointer-events-none flex justify-center items-center">
             <span class="text-[150px]">🏯</span>
         </div>
-        <h1 class="text-3xl font-black tracking-tighter mb-2 italic">大人關西御賜行程</h1>
-        <p class="text-sm font-medium tracking-widest text-slate-400">👑 總管府特編 · 2026 黃金週攻堅版 👑</p>
+        <h1 class="text-3xl font-black tracking-tighter mb-2 italic">大人關西御賜行程 V3.0</h1>
+        <p class="text-sm font-medium tracking-widest text-slate-400">⚖️ 總管府特編 · 每日提醒復刻版 ⚖️</p>
     </header>
 
-    <!-- 導航菜單 -->
     <nav class="sticky top-0 bg-white/90 backdrop-blur-md shadow-lg flex overflow-x-auto z-50 no-scrollbar">
-        <button onclick="showTab('prep')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">📋 整備</button>
-        <button onclick="showTab('d1')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-slate-900 text-slate-900">🛬 D1</button>
-        <button onclick="showTab('d2')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🛍️ D2</button>
-        <button onclick="showTab('d3')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🌊 D3</button>
-        <button onclick="showTab('d4')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">⛩️ D4</button>
-        <button onclick="showTab('d5')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🧳 D5</button>
+        <button onclick="showTab('d1')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-slate-900 text-slate-900">🛬 D1 抵達</button>
+        <button onclick="showTab('d2')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🛍️ D2 大阪</button>
+        <button onclick="showTab('d3')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🌊 D3 海之京都</button>
+        <button onclick="showTab('d4')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">⛩️ D4 京都</button>
+        <button onclick="showTab('d5')" class="tab-btn flex-none px-6 py-4 text-sm font-bold border-b-4 border-transparent">🧳 D5 京都</button>
     </nav>
 
     <main class="max-w-2xl mx-auto p-4 space-y-6">
 
-        <!-- 整備區 -->
-        <section id="prep" class="tab-content space-y-4">
-            <div class="card warning-box">
-                <h3 class="font-bold text-red-600 mb-2">⚠️ 總管死諫</h3>
-                <p class="text-sm">5/5 是連假最後一天，收假人潮極其恐怖，<strong>Haruka 特急券</strong>請務必在三週前於網路訂好「指定席」，否則大人恐要站著回機場。</p>
-            </div>
-            <div class="card">
-                <h3 class="font-bold border-b pb-2 mb-3">🛠️ 出國整備清單</h3>
-                <ul class="grid grid-cols-1 gap-2 text-sm">
-                    <li class="flex items-center">✅ 實體 SIM 卡 (黃金週人多避開eSIM)</li>
-                    <li class="flex items-center">✅ 行動電源 (大容量，防夾娃娃耗電)</li>
-                    <li class="flex items-center">✅ 封箱膠帶 (放入託運行李)</li>
-                    <li class="flex items-center">✅ JCB / VISA / Master 各二張</li>
-                    <li class="flex items-center">✅ 濕紙巾 (多帶幾包小包隨身)</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- DAY 1: 05/01 (五) -->
+        <!-- DAY 1 -->
         <section id="d1" class="tab-content active space-y-4">
-            <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/01 <span class="text-sm font-normal ml-3 text-slate-500">台灣 ➔ 大阪</span></h2>
-            
-            <div class="time-node">
-                <p class="font-bold text-lg">✈️ 22:00 抵達關西機場 KIX</p>
-                <p class="text-xs text-gray-500">捷星 GK54 | 預計通關後於 22:50 前往車站</p>
+            <h2 class="text-2xl font-black text-slate-800">📅 05/01 抵達大阪</h2>
+            <div class="warning-box">
+                <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
+                <p class="text-xs text-red-600 mt-1">22:00 落地已晚，出關約 45-60 分鐘。南海電鐵最晚 23:35 需搭上，否則僅剩計程車（極貴）。</p>
             </div>
-            
             <div class="time-node">
-                <p class="font-bold text-lg">🚆 23:05 搭乘 南海電鐵 (空港急行)</p>
-                <p class="text-sm">前往「難波站」。若沒趕上，最後一班為 23:35。</p>
+                <p class="font-bold text-lg">✈️ 22:00 落地 KIX (GK54)</p>
             </div>
-
             <div class="time-node">
-                <p class="font-bold text-lg">🏨 23:55 抵達難波，入住飯店</p>
-                <p class="text-sm text-blue-600">📍 日本橋東橫INN (徒步 8-10 分鐘)</p>
+                <p class="font-bold text-lg">🚆 23:05 南海電鐵往難波</p>
             </div>
-
+            <div class="time-node">
+                <p class="font-bold text-lg">🏨 23:55 入住 日本橋東橫INN</p>
+            </div>
             <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🍜 深夜熱食拉麵建議：</h4>
-                <p class="text-xs mt-1">【金久右衛門】醬油拉麵名店，步行可達。<br>【一蘭】24小時，方碗裝雞湯底。<br>【神座】蔬菜鮮甜，適合深夜清腸胃。</p>
+                <h4 class="font-bold text-orange-800">🍜 宵夜建議：</h4>
+                <p class="text-sm mt-1">金久右衛門、一蘭或神座 (皆為熟食拉麵)。</p>
             </div>
         </section>
 
-        <!-- DAY 2: 05/02 (六) -->
+        <!-- DAY 2 -->
         <section id="d2" class="tab-content space-y-4">
-            <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/02 <span class="text-sm font-normal ml-3 text-slate-500">大阪：純逛街之戰</span></h2>
-            
-            <div class="time-node">
-                <p class="font-bold text-lg">🚶 10:00 從日本橋出發逛街</p>
-                <p class="text-sm text-gray-500">範圍：心齋橋、美國村、南船場</p>
+            <h2 class="text-2xl font-black text-slate-800">📅 05/02 大阪購物戰</h2>
+            <div class="warning-box">
+                <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
+                <p class="text-xs text-red-600 mt-1">今日為黃金週週六，心齋橋人潮將如潮水。夾娃娃戰利品體積大，建議先放百貨置物櫃，或中途回飯店卸貨。</p>
             </div>
-
+            <div class="time-node">
+                <p class="font-bold text-lg text-red-600">🍳 09:00 早餐：eggslut</p>
+                <p class="text-sm text-gray-500">📍 心齋橋店。大人指定滑蛋漢堡。</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg">🛍️ 10:30 逛街活動 (心齋橋/美國村)</p>
+            </div>
             <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🍱 午餐熱食建議：</h4>
-                <p class="text-sm mt-1">1. 🍖 <strong>牛かつ もと村</strong> (炸牛排，可自烤全熟)<br>2. 🍛 <strong>北極星蛋包飯</strong> (洋食元祖，全熟蛋皮)<br>3. 🥩 <strong>牛たん 吉次</strong> (心齋橋炭火燒牛舌)</p>
+                <h4 class="font-bold text-orange-800">🍱 午餐建議：</h4>
+                <p class="text-sm mt-1">牛かつ もと村、北極星蛋包飯、牛たん 吉次。</p>
             </div>
-
             <div class="time-node">
-                <p class="font-bold text-lg">🎮 14:00 難波 Taito 夾娃娃</p>
-                <p class="text-sm text-gray-500">大人推薦：難波旗艦店，尋找 Dekakin 常用機台。</p>
+                <p class="font-bold text-lg">🎮 14:00 夾娃娃 (Taito 難波)</p>
             </div>
+            <div class="card tea-box">
+                <h4 class="font-bold text-green-800">☕ 下午茶：</h4>
+                <p class="text-sm mt-1">Mel Coffee Roasters 或 Elk Pancake。</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg">🛍️ 18:00 難波/日本橋 逛街</p>
+            </div>
+        </section>
 
+        <!-- DAY 3 -->
+        <section id="d3" class="tab-content space-y-4">
+            <h2 class="text-2xl font-black text-slate-800">📅 05/03 海之京都</h2>
+            <div class="warning-box">
+                <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
+                <p class="text-xs text-red-600 mt-1">連假出遊，高速公路極大機率塞車，回程恐延誤至 20:00 後。早餐務必於 07:20 前備妥帶上車。</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg text-red-600">📍 07:20 蟹道樂東店集合</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg">🚍 行程：天橋立 ➔ 伊根舟屋</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg">🚍 18:30+ 抵達日本橋</p>
+            </div>
+            <div class="card meal-box">
+                <h4 class="font-bold text-orange-800">🍜 晚餐建議：</h4>
+                <p class="text-sm">龜王拉麵 或 玉五郎。</p>
+            </div>
+        </section>
+
+        <!-- DAY 4 -->
+        <section id="d4" class="tab-content space-y-4">
+            <h2 class="text-2xl font-black text-slate-800">📅 05/04 京都</h2>
+            <div class="warning-box">
+                <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
+                <p class="text-xs text-red-600 mt-1">今日移動切記：堺筋線直通阪急，免換車。在京都切勿搭公車，市區是大型停車場。善用地鐵與雙腿。</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg">🚆 09:30 移動：日本橋 ➔ 烏丸</p>
+                <p class="text-sm text-blue-600">🏨 入住：京都四條烏丸東橫INN</p>
+            </div>
+            <div class="card meal-box">
+                <h4 class="font-bold text-orange-800">🍜 午餐首選：麵處 虵之目屋</h4>
+                <p class="text-xs mt-1">📍 魚介雞白湯，溫潤厚實，適合初抵京都享用。</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg">🌳 14:00 下鴨神社 & 河合神社</p>
+            </div>
             <div class="card tea-box">
                 <h4 class="font-bold text-green-800">🍰 下午茶建議：</h4>
-                <p class="text-sm mt-1">☕ <strong>Mel Coffee Roasters</strong> (南船場精品外帶)<br>🥞 <strong>Elk Pancake</strong> (立體拉花鬆餅)<br>🏢 <strong>Muji Cafe</strong> (Parco店，空間感佳)</p>
+                <p class="text-sm mt-1">☕ here 京都、Smart Coffee、然花抄院。</p>
             </div>
-
+            <div class="time-node">
+                <p class="font-bold text-lg">⛩️ 16:30 平安神宮 散策</p>
+            </div>
             <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🥩 晚餐熱食建議：</h4>
-                <p class="text-sm mt-1">1. 🥓 <strong>燒肉 力丸</strong> (吃到飽熱門店)<br>2. 🍤 <strong>串炸 だるま</strong> (難波本店，禁沾二次醬)<br>3. 🥓 <strong>道頓堀肉劇場</strong> (豪邁燒肉丼)</p>
+                <h4 class="font-bold text-orange-800">🍜 晚餐首選：魁力屋 四條烏丸店</h4>
+                <p class="text-xs mt-1">📍 飯店旁。背脂醬油拉麵，正統京都家常風味。</p>
             </div>
         </section>
 
-        <!-- DAY 3: 05/03 (日) -->
-        <section id="d3" class="tab-content space-y-4">
-            <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/03 <span class="text-sm font-normal ml-3 text-slate-500">海之京都一日遊</span></h2>
-            
-            <div class="card warning-box">
-                <p class="text-sm text-red-600 font-bold">🚨 集合禁忌：此處為 Klook 拼車，遲到不候，大人請務必提早！</p>
-            </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg">📍 07:20 抵達 蟹道樂道頓堀東店 集合</p>
-                <p class="text-sm">07:30 準時發車。早餐建議前晚備好於車上吃。</p>
-            </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg">⛩️ 10:20 天橋立散策</p>
-                <p class="text-sm">午餐建議：當地餐廳之「炙燒海鮮蓋飯」或熟魚料理。</p>
-            </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg">🛶 13:30 伊根舟屋導覽</p>
-            </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg">🚍 18:30+ 抵達大阪日本橋 (視塞車狀況)</p>
-            </div>
-
-            <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🍜 晚餐/宵夜建議：</h4>
-                <p class="text-sm mt-1">由於回程時間不穩，建議回飯店附近吃：<br>【龜王拉麵】難波店。<br>【玉五郎】煮干拉麵黑門店。</p>
-            </div>
-        </section>
-
-        <!-- DAY 4: 05/04 (一) -->
-        <section id="d4" class="tab-content space-y-4">
-            <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/04 <span class="text-sm font-normal ml-3 text-slate-500">京都：神社文化行</span></h2>
-            
-            <div class="time-node">
-                <p class="font-bold text-lg">🚆 09:30 移駕京都</p>
-                <p class="text-sm">日本橋站搭「堺筋線」直通「烏丸站」。<br>抵達後飯店寄行李，隨即輕裝出發。</p>
-            </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg">🌳 11:00 下鴨神社 & 河合神社</p>
-                <p class="text-sm">交通：出町柳站徒步。河合神社求美、下鴨神社求財。</p>
-            </div>
-
-            <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🍜 午餐熱食建議：</h4>
-                <p class="text-sm mt-1">1. 🍜 <strong>おめん (Omen)</strong> 烏龍麵，雅緻首選。<br>2. 🍱 <strong>鳥せゑ</strong> 祇園店，炭烤雞肉丼飯。<br>3. 🍲 <strong>祇園 Tanto</strong> 炒麵/大阪燒。</p>
-            </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg">⛩️ 14:30 平安神宮</p>
-                <p class="text-sm">欣賞世界最大級鳥居，飯後散步消食。</p>
-            </div>
-
-            <div class="card tea-box">
-                <h4 class="font-bold text-green-800">🍵 下午茶建議：</h4>
-                <p class="text-sm mt-1">1. 🍵 <strong>然花抄院</strong> (室町本店，町家極致享受)<br>2. ☕ <strong>Blue Bottle</strong> (南禪寺店，美感建築)<br>3. 🍮 <strong>Cheka</strong> (提拉米蘇甜甜圈)</p>
-            </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg">🛍️ 17:00 京都逛街活動</p>
-                <p class="text-sm text-gray-500">新京極、四條河原町 GiGO 夾娃娃探查。</p>
-            </div>
-
-            <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🍱 晚餐熱食建議：</h4>
-                <p class="text-sm mt-1">1. 🐖 <strong>名代豬排</strong> (四條烏丸店，飯店旁最穩)<br>2. 🥘 <strong>東洋亭</strong> (漢堡排，經典錫箔包裹燒)<br>3. 🍜 <strong>貝だし麺 きた田</strong> (貝類高湯熱麵)</p>
-            </div>
-        </section>
-
-        <!-- DAY 5: 05/05 (二) -->
+        <!-- DAY 5 -->
         <section id="d5" class="tab-content space-y-4">
-            <h2 class="text-2xl font-black text-slate-800 flex items-center">📅 05/05 <span class="text-sm font-normal ml-3 text-slate-500">京都採購 ➔ 回家</span></h2>
-            
-            <div class="card warning-box">
-                <p class="text-sm text-red-600 font-bold">🚨 重要：今日需隨時留意行李重量，大人夾娃娃的戰果必須在下午三點前裝箱完成！</p>
+            <h2 class="text-2xl font-black text-slate-800">📅 05/05 京都</h2>
+            <div class="warning-box">
+                <p class="text-sm text-red-700 font-bold">📢 總管提醒：</p>
+                <p class="text-xs text-red-600 mt-1">最後決戰！所有戰利品需於 16:00 前裝箱完成。Haruka 指定席務必提早預約，否則大人恐要站著回機場。</p>
             </div>
-
             <div class="time-node">
-                <p class="font-bold text-lg">🛍️ 10:00 專攻採購：Mizuno & Onitsuka</p>
-                <p class="text-sm">地點：四條河原町旗艦店。買完直接回飯店大廳塞行李。</p>
+                <p class="font-bold text-lg">🍳 09:30 錦市場開攻</p>
+                <p class="text-sm">🥢 三木鶏卵、☕ WEEKENDERS COFFEE。</p>
             </div>
-
-            <div class="card meal-box">
-                <h4 class="font-bold text-orange-800">🥩 午餐熱食建議：</h4>
-                <p class="text-sm mt-1">1. 🍔 <strong>挽肉と米</strong> (需早起領票，現烤漢堡排)<br>2. 🥩 <strong>三鳩亭</strong> (壽喜燒老字號，煮熟牛肉極鮮)<br>3. 🥗 <strong>都野菜賀茂</strong> (京都蔬菜熟食吃到飽)</p>
+            <div class="time-node">
+                <p class="font-bold text-lg">🛍️ 11:30 終極採購 (Mizuno/Onitsuka)</p>
             </div>
-
             <div class="card tea-box">
-                <h4 class="font-bold text-green-800">🍡 最後下午茶建議：</h4>
-                <p class="text-sm mt-1">1. 🍨 <strong>鍵善良房</strong> (四條本店，葛切冷麵狀甜點)<br>2. 👟 <strong>Onitsuka Tiger Cafe</strong> (與品牌結合之憩處)<br>3. 🍰 <strong>大丸京都店 B1</strong> (買著名甜點回飯店吃)</p>
+                <h4 class="font-bold text-green-800">🍎 下午茶/甜點：</h4>
+                <p class="text-sm mt-1">🍎 Candyapple、🍰 Patisserie m.s.h。</p>
             </div>
-
-            <div class="time-node">
-                <p class="font-bold text-lg text-red-600">🚆 18:00 搭乘 Haruka 前往機場</p>
-                <p class="text-sm">車程 80 分鐘。19:30 抵達 KIX，21:30 辦理登機。</p>
+            <div class="card meal-box">
+                <h4 class="font-bold text-orange-800">🥩 午餐建議：</h4>
+                <p class="text-sm">挽肉と米、名代豬排 或 三鳩亭。</p>
             </div>
-
             <div class="time-node">
-                <p class="font-bold text-lg">✈️ 23:35 關西機場起飛 (GK57)</p>
+                <p class="font-bold text-lg text-red-600">🚆 18:00 Haruka 前往機場</p>
+                <p class="text-sm">⚠️ 必須預訂指定席，預計 19:30 抵達 KIX。</p>
+            </div>
+            <div class="time-node">
+                <p class="font-bold text-lg">✈️ 23:35 起飛 (GK57)</p>
             </div>
         </section>
 
     </main>
 
-    <!-- 固定頁腳 -->
     <footer class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-3 text-[10px] grid grid-cols-3 gap-1 text-center border-t border-slate-700 shadow-2xl">
-        <div class="border-r border-slate-700">🏨 大阪日本橋東橫</div>
-        <div class="border-r border-slate-700">🏨 京都四條烏丸</div>
+        <div class="border-r border-slate-700">🏨 東橫INN 日本橋</div>
+        <div class="border-r border-slate-700">🏨 東橫INN 四條烏丸</div>
         <div>📱 班機 GK54/57</div>
     </footer>
 
